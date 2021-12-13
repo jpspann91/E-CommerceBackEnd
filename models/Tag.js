@@ -1,9 +1,11 @@
+//import Model and DataTypes from sequelize
 const { Model, DataTypes } = require('sequelize');
-
+//Import our connection file to establish connection with mysql
 const sequelize = require('../config/connection.js');
 
+//Tag inherits methods from Model
 class Tag extends Model {}
-
+//Model strcuture for Tag
 Tag.init(
   {
     // define columns

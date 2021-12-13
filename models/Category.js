@@ -1,9 +1,12 @@
+//import Model, DataTypes and sequelize
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
 
+//Category inherits everything from Model class
 class Category extends Model {}
 
+//Model structure
 Category.init(
   {
     // define columns
